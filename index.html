@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body class="bg-gray-900 text-white flex flex-col justify-center place-items-center text-center">
+    <h1 class="text-[40px] font-serif text-blue-500 font-bold mt-[10px]">Tic Tac Toe</h1>
+    <!-- <div class="container border-2 border-blue-700 sm:w-[500px] w-[90%] sm:h-[500px] h-[50vh] flex  items-center justify-center mt-[20px]  rounded-lg"> -->
+
+    <!-- winner  -->
+    <div class="winner h-auto w-[90%] flex flex-col justify-center items-center rounded-lg border-[1.5px] border-blue-700 font-serif font-bold mt-[30px]" style="display: none;">
+        <h1 class="animate-pulse text-[3rem] text-[#ffa07a]">Game Over!</h1>
+        <p class="text-[2rem] text-[#e9967a]">The Winner is: <span class="text-[#76ff7a]"></span> </p>
+
+        <div class="bg-blue-700 h-[1px] w-[90%] opacity-50 mt-[20px] mb-[20px] mx-auto"></div>
+
+        <button class="new-game bg-blue-700 p-[10px] rounded-md mb-[20px]">New Game</button>
+    </div>
+    <!-- winner ends -->
+    
+
+
+
+    <div class="container border-[2px] border-blue-700 sm:w-auto w-[90%] h-auto flex  place-items-center justify-center mt-[20px] rounded-lg">
+        <div class="game sm:h-[90%] sm:w-[90%] font-bold sm:text-[45px] text-[15px] grid grid-cols-3 justify-center place-items-center gap-x-4 gap-y-4 sm:my-[20px] my-[40px] mx-[20px]">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+    </div>
+    <button class="reset-btn bg-blue-700 p-[10px] bg-opacity rounded-md mt-[20px] mb-[20px] hover:bg-blue-500 transition-colors duration-300">Reset The Game</button>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

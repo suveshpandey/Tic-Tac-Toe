@@ -1,0 +1,31 @@
+.box{
+    height: 18vmin;
+    width: 18vmin;
+
+    background-color: rgb(183, 171, 171);
+    background-color: rgb(4, 4, 17);
+    color: rgb(222, 217, 217);
+    border-radius: 8px;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.1);
+    border: .5px solid rgb(5, 5, 102) ;
+}
+.box:hover{
+    /* background-color: rgb(209, 205, 205); */
+    color: rgb(9, 9, 29);
+    transition: all 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out forwards;
+}
